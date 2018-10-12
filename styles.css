@@ -1,0 +1,153 @@
+*{
+    font-family: 'Libre Baskerville', serif;
+    padding:0;
+    margin: 0;
+}
+
+/* header styles */
+header{
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+    background-color: #4d9b42;
+    border-radius: 2px;
+
+}
+h1{
+    
+    height: 50%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+    
+}
+a:hover{
+    font-weight: bold;
+}
+.search{
+    display: none;
+}
+
+/* form main div */
+.form{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+    background-color:#f9f5e5;
+
+}
+p{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+input{
+    margin: 5px;
+    border: none;
+}
+button{
+    border-radius: 5px;
+    background-color:#4d9b42;
+}
+.tree{
+    display: none;
+}
+.images.health{
+    display:none;
+}
+/* sidebar images */
+.images{
+    height: 292px;
+    /* border: 2px solid blue; */
+    display: flex;
+    position: relative;
+}
+.quote{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Contrail One', cursive;
+    left: 50%;
+    bottom:30%;
+    transform: translate(-50%);
+
+}
+.quote-pic{
+    align-self: flex-end;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+@media only screen and (min-width:1200px){
+
+    header{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    
+    a{
+        margin: 0 15px
+    }
+    .search{
+        display: inline-block;
+        height: 30px;
+        border-radius: 5px;
+    }
+    section{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 700px;
+        justify-content: space-between;
+        background-color:#f9f5e5;
+    }
+    .form{
+        width:25%;
+        height: 100%;
+        justify-content: center;
+        
+    }
+    input{
+        height: 30px;
+       
+    }
+    .images{
+        width:33%;
+        height:33%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+    .images.health{
+        display:flex;
+        width: 100%;
+        height: 200%;
+    }
+    .tree{
+        display:flex;
+        height: 100%;
+        width: 535px;
+        
+    }
+    .quote{
+        top:5%;
+    }
+    
+}
